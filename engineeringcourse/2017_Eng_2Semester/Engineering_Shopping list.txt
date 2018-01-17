@@ -21,3 +21,20 @@ Light sensors: https://www.amazon.com/dp/B00XDT8KI4
 Nathan
 Buttons  https://www.amazon.com/dp/B072R1H185
 Case for display https://www.amazon.com/dp/B01HV97F64  <-- Did not get yet!
+
+
+-------------
+Zack and Jake
+-------------
+Parts needed:
+-Ceramic capacitors
+-Electrolytic capacitor
+-9v Battery
+-Hookup Wire
+-Audio plug
+-Resistors
+-18 gauge solid wire - http://a.co/cPI0gl8
+-Velcro
+-NPN transistor - http://a.co/b0zRtnI
+-Copper clad board - http://a.co/1a07Jhj
+-Battery clip (comes in pack of 5) - http://a.co/hmrRiEp
