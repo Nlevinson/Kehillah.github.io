@@ -1,0 +1,36 @@
+a {
+  font-size: 15pt;
+  margin-left: 20px;
+  font-style: bold;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+h3 {
+  margin-left: 20px;
+}
+
+h4 {
+  margin-left: 20px;
+}
+
+li {
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+body {
+  background-color: #9DC4C1;
+}
+li {
+  margin-top: 6px;
+}
+p {
+  font-size: 20px;
+
+}
+footer{
+  margin-top: 50px;
+}
