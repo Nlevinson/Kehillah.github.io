@@ -1,29 +1,129 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Project page: projectName</title>
-
-    <style>
-
-    </style>
-
-</head>
-
-<body>
-    <br>
-    <h1>
-		<p align="center">
-Project page: projectName		</h1>
-
-
-
-
-    <h3>Fill in your stuff here</h3>
+    <head>
+        <button onclick="goUp()" id="topBtn">Top</button>         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kehillah Kart</title>
+        <style type="text/css">
+            UL {
+                list-style: "list-style-type:disc"
+            }
+            #topBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 100;
+                border: none;
+                outline: none;
+                background-color: rgb(99, 99, 99);
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            #topBtn:hover {
+                background-color: rgb(146, 146, 146);
+                color: rgb(255, 255, 255);
+            }
+            a:link, a:visited {
+                background-color: #ffffff;
+                color: rgb(140, 100, 100);
+                padding: 0px 3px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active {
+                background-color: rgb(146, 146, 146);
+                color: rgb(255, 255, 255);
+            }
+            body{margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:rgb(68, 68, 68);padding:010px}
+            h1,h2,h3{line-height:1.2}
+        </style>
 <!--
-For example: Name of people, pictures, your slides, etc.
-Keep it organized!
+    START TOP BUTTON
 -->
-</body>
+        <button onclick="goUp()" id="topBtn">Top</button>
+        <script>
+        window.onscroll = function() {scrollFunction()};
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+        function goUp() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+<!--
+    END TOP BUTTON
+-->
+
+    </head>
+<!-- </html> -->
+    <body>
+        <header>
+            <h1><p align = "center">Kehillah Go Kart Project</h1>
+            <aside><p align = "center">
+                <a href="pages/menu.html">
+                    Jump to Week</a>
+                <br><a href="https://github.com/JCimring">
+                    <span title="JCimring">
+                    Jake C</span></a> |
+                <a href="">
+                    <span title="Githubless loser">
+                    Jason F</span></a> |
+                <a href="https://github.com/squishy-linux">
+                    <span title="squishy-linux">
+                    Jeff W</span></a> |
+                <a href="https://github.com/Grrw">
+                    <span title="Grrw">
+                    Ben Y</span></a>
+                <br><a href="http://a.co/6eCeI6k">
+                    <span title="Upheld by Jeff">
+                    Amazon Shopping List</span></a>
+                <br><a href="https://docs.google.com/presentation/d/178tGzXx65OjVDaK2k7x0x5TkDWgCS8UMlwlkqhCgGeM/edit?usp=sharing">
+                    <span title="Created before we began working">
+                    Google Drive Presentation</span></a>
+            </aside>
+        </header>
+
+<!--
+    Weeks start here
+    Uncomment the week that you're editing
+
+    REMEMBER TO ALSO PASTE THIS ONCE WEEKLY INTO THE INDEX BOX
+-->
+
+    <!-- <h2><a name="3">Week 3 - January 28th to February 3rd:</a></h2> -->
+
+    <!-- <h2><a name="2">Week 2 - January 21st to 27th:</a></h2> -->
+
+    <h2><a name="1">Week 1 - January 14th to 20th:</a></h2>
+    <h3>Updates:</h3>
+        <ul>
+            <li>Ordered the following parts:</li>
+            <ul style="list-style-type:square">
+                <li><a href="https://www.amazon.com/dp/B002DTV172/_encoding=UTF8?coliid=I24HPM3MUVJKE8&colid=2BSI06M3A5WER&psc=0">
+                    24v Battery</a></li>
+                <li><a href="https://www.amazon.com/dp/B00EB12V74/_encoding=UTF8?coliid=I2NPXXATI7OIQP&colid=2BSI06M3A5WER&psc=0">
+                    24v Electric Scooter Motor</a></li>
+                <li><a href="https://www.amazon.com/dp/B00N19D8II/_encoding=UTF8?coliid=I1WOIK3EA81PJ&colid=2BSI06M3A5WER&psc=0">
+                    Motor Throttle and Electrical Control Kit</a></li>
+            </ul>
+            <li>Began working on this very website</li>
+        </ul>
+    <h3>Concerns:</h3>
+        <ul>
+            <li>None This Week!</li>
+        </ul>
+    <p>
+
+    </body>
 </html>
