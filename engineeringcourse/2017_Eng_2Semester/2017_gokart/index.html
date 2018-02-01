@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <!-- bg & text settings -->
+        <!--
+            This block, copied from W3Schools, allows for the creation of collapsible text buttons
+            It must be at the top of the file. <link rel=...> has settings which must be overwritten
+        -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <button onclick="goUp()" id="topBtn">Top</button>         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Kehillah Kart</title>
         <style type="text/css">
             UL {
@@ -42,9 +52,7 @@
             body{margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:rgb(68, 68, 68);padding:010px}
             h1,h2,h3{line-height:1.2}
         </style>
-<!--
-    START TOP BUTTON
--->
+    <!-- top button -->
         <button onclick="goUp()" id="topBtn">Top</button>
         <script>
         window.onscroll = function() {scrollFunction()};
@@ -61,20 +69,16 @@
             document.documentElement.scrollTop = 0;
         }
         </script>
-<!--
-    END TOP BUTTON
--->
-
+   
     </head>
-<!-- </html> -->
-<!-- width="352" height="288" -->
-<!-- ./2017_Eng_2Semester/2017_gokart/ -->
     <body>
+<!-- title and aside -->
         <header>
             <h1><p align = "center"><a href="../../index.html">Kehillah</a> Go Kart Project</h1>
             <aside><p align = "center">
-                <a href="pages/menu.html">
-                    Jump to Week</a>
+                <!--DEPRECIATED 
+                    <a href="pages/menu.html">
+                    Jump to Week</a> -->
                 <br><a href="https://github.com/JCimring">
                     <span title="JCimring">
                     Jake C</span></a> |
@@ -88,60 +92,126 @@
                     <span title="Grrw">
                     Ben Y</span></a>
                 <br><a href="http://a.co/6eCeI6k">
-                    <span title='"Upheld" by Jeff'>
+                    <span title='"Maintained" by Jeff'>
                     Amazon Shopping List</span></a>
                 <br><span title="Created before we began working">
                     <a href="https://docs.google.com/presentation/d/178tGzXx65OjVDaK2k7x0x5TkDWgCS8UMlwlkqhCgGeM/edit?usp=sharing">
                     Google Drive Link</a> |
                     <a href="./pages/proj_prop_fin.pdf"> Presentation </a></span>
+                <br> <!-- Information Buttons -->
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#images-disclaimer">About Images</button>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week-jump">Jump to Week...</button>
+                        <div id="images-disclaimer" class="collapse"><p align="center">
+                            The images displayed here are squashed to 220px height and 250px width.
+                            <br>This follows the standards set by Dr. Baharav on the <a href="../../index.html">
+                                <span title="Semester 2 2017 Engineering Index">
+                                    main page
+                                </span></a>
+                            <br><a href="pic"><span title="">Click Here to Browse Full-Size Images</span></a>
+                        </p></div>
+                        <div id="week-jump" class="collapse"><p align="center">
+                                <b><a href="#1">Week 1 - January 14th to 20th</a></b>
+                                <br><b><a href="#2">Week 2 - January 21st to 27th</a></b>
+                                <br><b><a href="#3">Week 3 - Jan-Feb 28th to 3rd</a></b>
+                                <!-- <b><a href="#4">Week 4 - February 4th to 10th</a></b> -->
+                                <!-- <b><a href="#5">Week 5 - February 11th to 17th</a></b> -->
+                                <!-- <b><a href="#6">Week 6 - February 18th to 24th</a></b> -->
+                                <!-- <b><a href="#7">Week 7 - Feb-Mar 25th to 3rd</a></b> -->
+                        </p></div>
+                        
             </aside>
         </header>
 
-<!--
-    Weeks start here
-    Uncomment the week that you're editing
+<!-- REMEMBER THIS:
 
+    ADD THIS TO IMAGE SRC WHEN COPYING TO ENGINEERINCOURSE INDEX:
+                  ./2017_Eng_2Semester/2017_gokart/
+
+                            Weeks start here
     REMEMBER TO ALSO PASTE THIS ONCE WEEKLY INTO THE INDEX BOX
--->
+                        height="220" width="250"
 
-    <!-- <h2><a name="3">Week 3 - January 28th to February 3rd:</a></h2> -->
+    -->
+
+<!-- Weekly Updates -->
+
+    <!-- <h2><a name="7">Week 7 - Feb-Mar 25th to 3rd:</a></h2> -->
+
+
+    <!-- <h2><a name="6">Week 6 - February 18th to 24th:</a></h2> -->
+
+
+    <!-- <h2><a name="5">Week 5 - February 11th to 17th:</a></h2> -->
+
+
+    <!-- <h2><a name="4">Week 4 - February 4th to 10th:</a></h2> -->
+
+
+    <h2><a name="3">Week 3 - Jan-Feb 28th to 3rd:</a></h2>
+        <h3>Updates:</h3>
+            <ul>
+                <li>Construct the Steering shaft</li>
+                <img src="pic/feb02-shaft.jpg" alt="Jason and Jake with the Steering Shaft" height="220" width="250">
+                <li>Attach a seat back to the chassis</li>
+                <img src="pic/feb02-chassis.jpg" alt="The Chassis and Basic Design. Also a Cushion" height="220" width="250">
+                <li>Ordered <a href="https://www.amazon.com/Flat-Truck-Wheel-Center-Shaft/dp/B00RS7PCFQ">10" Tire and Wheel with 5/8" Shaft Hole</a></li>
+            </ul>
+        <b><a href="pages/proj_prop_fin.pdf">
+            <span title="Link to Presentation">
+                Milestone</a> Update:</b>
+            </span>
+            <ul>
+                <li>We have decided to order the parts as needed</li>
+                <li>Everything we need is arriving and in good condition</li>
+            </ul>
+        <h3>Concerns:</h3>
+            <ul>
+                <li><i>Serious</i> concern over getting the controller to work</li>
+                <li>We may have to first make the kart work without the controller</li>
+            </ul>
+
 
     <h2><a name="2">Week 2 - January 21st to 27th:</a></h2>
-    <h3>Updates:</h3>
-        <ul>
-            <li>Constructed the first part of the steering</li>
-            <img src="pic/jan26-steer.jpg" alt="Steering Base" width="352" height="288">  
-            <li>Combined 4 6v batteries in series to get 24v</li>            
-            <li>Spun a test motor using the batteries</li>  
-            <img src="pic/jan26-motor.jpg" alt="Motor and Batteries in Series" width="352" height="288">                    
-        </ul>
-    <h3>Concerns:</h3>
-        <ul>
-            <li>We may set up the controller wrong and break it</li>
-            <li>The motor may not arrive soon enough to test</li>
-            <li>There is a chance we short-circuit the batteries</li>
-        </ul>
+        <h3>Updates:</h3>
+            <ul>
+                <li>Constructed the first part of the steering</li>
+                <img src="pic/jan26-steer.jpg" alt="Steering Base" height="220" width="250">  
+                <li>Combined 4 6v batteries in series to get 24v</li>            
+                <li>Spun a test motor using the batteries</li>
+                <img src="pic/jan26-motor.jpg" alt="Motor and Batteries in Series" height="220" width="250">
+            </ul>
+        <h3>Concerns:</h3>
+            <ul>
+                <li>We may set up the controller wrong and break it</li>
+                <li>The motor may not arrive soon enough to test</li>
+                <li>There is a chance we short-circuit the batteries</li>
+            </ul>
+
 
     <h2><a name="1">Week 1 - January 14th to 20th:</a></h2>
-    <h3>Updates:</h3>
-        <ul>
-            <li>Ordered the following parts:</li>
-            <ul style="list-style-type:square">
-                <li><a href="https://www.amazon.com/dp/B002DTV172/_encoding=UTF8?coliid=I24HPM3MUVJKE8&colid=2BSI06M3A5WER&psc=0">
-                    24v Battery</a></li>
-                <li><a href="https://www.amazon.com/dp/B00EB12V74/_encoding=UTF8?coliid=I2NPXXATI7OIQP&colid=2BSI06M3A5WER&psc=0">
-                    24v Electric Scooter Motor</a></li>
-                <li><a href="https://www.amazon.com/dp/B00N19D8II/_encoding=UTF8?coliid=I1WOIK3EA81PJ&colid=2BSI06M3A5WER&psc=0">
-                    Motor Throttle and Electrical Control Kit</a></li>
+        <h3>Updates:</h3>
+            <ul>
+                <li>Ordered the following parts:</li>
+                <ul style="list-style-type:square">
+                    <li><a href="https://www.amazon.com/dp/B002DTV172/_encoding=UTF8?coliid=I24HPM3MUVJKE8&colid=2BSI06M3A5WER&psc=0">
+                        24v Battery</a></li>
+                    <li><a href="https://www.amazon.com/dp/B00EB12V74/_encoding=UTF8?coliid=I2NPXXATI7OIQP&colid=2BSI06M3A5WER&psc=0">
+                        24v Electric Scooter Motor</a></li>
+                    <li><a href="https://www.amazon.com/dp/B00N19D8II/_encoding=UTF8?coliid=I1WOIK3EA81PJ&colid=2BSI06M3A5WER&psc=0">
+                        Motor Throttle and Electrical Control Kit</a></li>
+                </ul>
+                <li>Began working on this very website</li>
             </ul>
-            <li>Began working on this very website</li>
-        </ul>
-    <h3>Concerns:</h3>
-        <ul>
-            <li>None This Week!</li>
-        </ul>
+        <h3>Concerns:</h3>
+            <ul>
+                <li>None This Week!</li>
+            </ul>
 
 
-    <!-- EOF -->
+<!-- EOF -->
     </body>
 </html>
+
+
+
+
