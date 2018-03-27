@@ -19,14 +19,13 @@ h4 {
 li {
   margin-left: 15px;
   font-size: 15px;
+  margin-top: 6px;
 }
 
 body {
   background-color: #9DC4C1;
 }
-li {
-  margin-top: 6px;
-}
+
 p {
   font-size: 20px;
 
